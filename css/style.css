@@ -1,0 +1,982 @@
+body {
+	background-color: lightyellow;
+}
+
+/*SHELVES*/
+
+.shelf-container {
+	position: absolute;
+	height: 33.33%;
+	width: 100%;
+}
+
+	.shelf-container:nth-child(2) { top: 33.33%; }
+	.shelf-container:nth-child(3) { bottom: 0%; }
+
+.shelf {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-bottom: 150px solid khaki;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+}
+
+.backing {
+	position:relative;
+	width: 80%;
+	height: 100%;
+	background:white;
+	left: 20%;
+	z-index: -1;
+}
+
+/*______________________________________*/
+
+/*APPLE*/
+
+.apple-container {
+  	width: 128px;
+  	height: 128px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;
+  	top: 10%;
+  	left: 5%;
+}
+
+	.apple-container:nth-child(2) {top: 40%; left: 10%;}
+
+.leaf {
+	width: 25px;
+	height: 20px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: green;
+	position:absolute;
+	top: 15px;
+	left: 40px;
+}
+
+.apple {
+    width: 100px;
+    position: absolute;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+    top: 50%;
+    left: 20%;
+}
+
+.apple:before {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -90px;
+    left: -18px;
+    border-width: 0 50px 40px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+
+.apple:after{
+	content:"";
+	width: 4px;
+	height: 25px;
+	background-color:brown;
+	position:absolute;
+	z-index: 1;
+	top: -100px;
+	left: 30px;
+}
+
+/*animation*/
+
+/*.apple-container div{
+	animation-name: applechange;
+	animation-duration: 120s;
+	filter: opacity;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes applechange {
+	0% {filter:opacity(100%);}
+	50% {filter:opacity(50%);}
+	100% {filter:opacity(25%);}
+
+}*/
+
+
+/*________________________*/
+
+/*ORANGE*/
+
+.orange-container {
+	width: 128px;
+  	height: 128px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;
+  	top: 75%;
+  	left: 0%;
+}
+
+.orange {
+  width: 100px;
+	height: 100px;
+	background: orange;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+  position: absolute;
+  top:20%;
+  left: 20%;
+}
+
+.orange-inside {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 15px solid green;
+	position: absolute;
+  top: 32px;
+  left: 50px;
+}
+.orange-inside:after {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 15px solid green;
+	position: absolute;
+	content: "";
+	top: 5px;
+	left: -10px;
+}
+
+/*animation*/
+
+/*.orange-container div{
+  animation-name: orangechange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes orangechange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*CARROT*/
+
+.carrot-container {
+width: 300px;
+  	height: 100px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;
+  	top: 50%;
+  	left: 60%;
+  	transform:rotate(-20deg);
+}
+
+.carrot {
+	border-top: 30px solid transparent;
+	border-right: 130px solid orange;
+	border-bottom: 30px solid transparent;
+  position: absolute;
+  top: 20%;
+  left:1%;
+  
+}
+
+.carrot-top {
+  width: 100px;
+	height: 8px;
+	background: green;
+  transform: rotate(-20deg);
+  position: absolute;
+  top:25%;
+  left:40%;
+  z-index: -1;
+}
+
+.carrot-top-2 {
+   width: 120px;
+	height: 8px;
+	background: green;
+  transform: rotate(-5deg);
+  position: absolute;
+  top:35%;
+  left:40%;
+  z-index: -1;
+}
+
+.carrot-top-3 {
+   width: 120px;
+	height: 8px;
+	background: green;
+  transform: rotate(10deg);
+  position: absolute;
+  top:45%;
+  left:35%;
+  z-index: -1; 
+}
+
+/*animation*/
+
+/*.carrot-container div{
+  animation-name: carrotchange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes carrotchange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*BANANA*/
+
+.banana-container {
+	width: 128px;
+  	height: 128px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;  
+  	top: 40%;
+  	left: 73%;
+  	transform: rotate(20deg);
+}
+
+	.banana-container:nth-child(2) {top: 30%; left: 80%;}
+	.banana-container:nth-child(3) {top: 70%; left: 85%;}
+
+.banana {
+ width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 25px 15px 0 0 yellow;
+  position: absolute;
+  top: 0%;
+  left: -10%;
+ }
+ 
+ .banana:after {
+   content:"";
+	width: 6px;
+	height: 15px;
+	background-color:brown;
+	position:absolute;
+	z-index: 1;
+	top: 14%;
+	left: 90%;
+  transform: rotate(-50deg);
+ }
+
+ /*animation*/
+
+/*.banana-container div{
+  animation-name: bananachange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes bananachange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*TOMATO*/
+
+.tomato-container {
+	width: 128px;
+  	height: 128px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;  
+  	top: 70%;
+  	left: 80%;
+}
+
+.tomato {
+	width: 100px;
+	height: 75px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 70px;
+	position: absolute;
+	top:30%;
+	left: 10%;
+}
+
+.tomato-inside {
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 15px solid green;
+	position: absolute;
+  	top: 35px;
+  	left: 28px;
+}
+.tomato-inside:after {
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-top: 15px solid green;
+	position: absolute;
+	content: "";
+	top: 3px;
+	left: -35px;
+}
+
+/*animation*/
+
+/*.tomato-container div{
+  animation-name: tomatochange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes tomatochange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*CHEESE*/
+
+.cheese-container {
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+    position: absolute;
+    display: inline-block;
+    top: 30%;
+    left: 25%;
+}
+
+.cheese {
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 100px solid yellow;
+  border-bottom: 40px solid transparent;
+  position: absolute;
+  transform: rotate(-20deg);
+  top: 20%;
+  left: 20%;
+}
+
+.cheese-bottom {
+  width: 105px;
+  height: 60px;
+  background: yellow;
+  position: absolute;
+  top:45%;
+  left:21.5%;
+}
+  
+.cheese-holes-1 {
+  width: 15px;
+  height: 15px;
+  background: gold;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top:48%;
+  left:60%; 
+}
+  
+  .cheese-holes-2 {
+  width: 30px;
+  height: 30px;
+  background: gold;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top:55%;
+  left:30%; 
+}
+
+/*animation*/
+
+/*.cheese-container div{
+  animation-name: cheesechange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes cheesechange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/* MILK */
+
+.milk-container {
+  width: 128px;
+  height: 200px;
+  margin: 16px;
+  position: absolute;
+  display: inline-block;
+  top: 20%;
+  left: 10%;
+}
+
+.milk {
+  width: 90px;
+  height:130px;
+  background: skyblue;
+  position: absolute;
+  top: 40%;
+  left: 23%; 
+}
+
+.milk-middle {
+  	border-bottom: 35px solid lightblue;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: 90px;
+  	position: absolute;
+  	top: 45px;
+  	left: 29px;
+}
+
+.milk-top {
+  width: 70px;
+  height: 20px;
+  background: white;
+  border: solid 1px skyblue;
+  position: absolute;
+  top: 15%;
+  left: 30.5%; 
+}
+
+/*animation*/
+
+/*.milk-container div{
+  animation-name: milkchange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes milkchange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*JUICE*/
+
+.juice-container {
+  width: 128px;
+  height: 200px;
+  margin: 16px;
+  position: absolute;
+  display: inline-block;
+  top: 2%;
+  left: 0%;
+}
+
+.juice {
+  width: 90px;
+  height:130px;
+  background: orange;
+  position: absolute;
+  top: 40%;
+  left: 23%; 
+}
+
+.juice-middle {
+  	border-bottom: 35px solid coral;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	width: 90px;
+  	position: absolute;
+  	top: 45px;
+  	left: 29px;
+}
+
+.juice-top {
+  width: 70px;
+  height: 20px;
+  background: white;
+  border: solid 1px orange;
+  position: absolute;
+  top: 15%;
+  left: 30.5%; 
+}
+
+/*animation*/
+
+/*.juice-container div{
+  animation-name: juicechange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes juicechange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*LEFTOVERS*/
+
+.leftovers-container {
+  width: 300px;
+  	height: 200px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;
+  	top: 0%;
+  	left: 0%;
+}
+
+.leftovers {
+  width: 200px;
+    position: absolute;
+    border-width: 100px 18px 0;
+    border-style: solid;
+    border-color: lightcyan transparent;
+    top: 40%;
+    left: 10%;
+}
+
+.leftovers-top {
+  width: 210px;
+  height: 20px;
+  background: dodgerblue;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+
+/*animation*/
+
+/*.leftovers-container div{
+  animation-name: leftoverschange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes leftoverschange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*SMALL LEFTOVERS*/
+
+.small-leftovers-container {
+  	width: 300px;
+  	height: 200px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block;
+  	top: 60%;
+  	left: 10%;
+}
+
+.small-leftovers {
+  width: 150px;
+    position: absolute;
+    border-width: 70px 18px 0;
+    border-style: solid;
+    border-color: mistyrose transparent;
+    top: 40%;
+    left: 20%;
+}
+
+.small-leftovers-top {
+  width: 170px;
+  height: 20px;
+  background: salmon;
+  position: absolute;
+  top: 30%;
+  left: 17%;
+}
+
+/*animation*/
+
+/*.small-leftovers-container div{
+  animation-name: smallleftoverschange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes smallleftoverschange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*CAN*/
+
+.can-container {
+	width: 150px;
+  	height: 150px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block; 
+  	top: 10%;
+  	left: 60%; 
+}
+
+.can {
+  width: 110px;
+	height: 90px;
+	background: dodgerblue;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 20%; 
+  left: 12%;
+ }
+ 
+ .can-top {
+  width: 90px;
+	height: 28px;
+	background: dodgerblue;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+  z-index: 1;
+  position: absolute;
+  top: 76%;
+  left: 18.5%;
+ }
+ 
+.can-top:after {
+  content:"";
+  width: 92px;
+   height: 30px;
+   background: silver;
+   -moz-border-radius: 100px / 50px;
+   -webkit-border-radius: 100px / 50px;
+   border-radius: 100px / 50px;
+  z-index: 1;
+  position: absolute;
+  top: -400%;
+  left: -1%;
+  transform: rotate(180deg);
+ }
+
+ /*animation*/
+
+/*.can-container div{
+  animation-name: canchange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes canchange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+ /*________________________*/
+
+/*GREEN CAN*/
+
+.green-can-container {
+	width: 150px;
+  	height: 150px;
+	margin: 16px;
+  	position: absolute;
+  	display: inline-block; 
+  	top: 30%;
+  	left: 75%; 
+}
+
+.green-can {
+  width: 110px;
+	height: 90px;
+	background: green;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 20%; 
+  left: 12%;
+ }
+ 
+ .green-can-top {
+  width: 90px;
+	height: 28px;
+	background: green;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+  z-index: 1;
+  position: absolute;
+  top: 76%;
+  left: 18.5%;
+ }
+ 
+.green-can-top:after {
+  content:"";
+  width: 92px;
+   height: 30px;
+   background: silver;
+   -moz-border-radius: 100px / 50px;
+   -webkit-border-radius: 100px / 50px;
+   border-radius: 100px / 50px;
+  z-index: 1;
+  position: absolute;
+  top: -400%;
+  left: -1%;
+  transform: rotate(180deg);
+ }
+
+/*animation*/
+
+/*.green-can-container div{
+  animation-name: greencanchange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes greencanchange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+
+}*/
+
+/*________________________*/
+
+/*EGGS*/
+
+.egg-container {
+  width: 300px;
+  height: 200px;
+  margin: 16px;
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  left: 35%;
+  z-index:1;
+}
+
+.egg-carton {
+  width: 200px;
+    position: absolute;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: peru transparent;
+    top: 50%;
+    left: 10%; 
+}
+
+.egg-1 {
+   display:block;
+   width: 50px;
+   height: 70px;
+   background-color: ivory;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   position: absolute;
+   z-index: -1;
+   top: 25%;
+   left: 15%; 
+   border: brown solid .5px;
+}
+
+.egg-2 {
+   display:block;
+   width: 50px;
+   height: 70px;
+   background-color: ivory;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   position: absolute;
+   z-index: -1;
+   top: 25%;
+   left: 35%; 
+   border: brown solid .5px;
+}
+
+.egg-3 {
+   display:block;
+   width: 50px;
+   height: 70px;
+   background-color: ivory;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   position: absolute;
+   z-index: -1;
+   top: 25%;
+   left: 55%; 
+   border: brown solid .5px;
+}
+
+/*animation*/
+
+/*.egg-container div{
+  animation-name: eggchange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes eggchange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+}*/
+
+/*________________________*/
+
+/*WATER CONTAINER*/
+
+.water-container {
+  width: 250px;
+  height: 250px;
+  margin: 16px;
+  position: absolute;
+  display: inline-block;
+  top: 0%;
+  left: 30%;
+   
+}
+
+.water-base {
+   width: 120px;
+    position: absolute;
+    border-width: 150px 18px 0;
+    border-style: solid;
+    border-color: blue transparent;
+    top: 30%;
+    left: 20%;
+}
+
+.water-fill {
+   width: 100px;
+    position: absolute;
+    border-width: 120px 18px 0;
+    border-style: solid;
+    border-color: lightcyan transparent;
+    top: 40%;
+    left: 23.5%;
+}
+
+.water-spout {
+  width: 0;
+  height: 0;
+  border-top: 40px solid blue;
+  border-left: 30px solid transparent;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.water-handle-1 {
+  width: 55px;
+  height: 10px;
+  background: blue;
+  position: absolute;
+  top:35%;
+  left:60%;
+}
+
+.water-handle-2 {
+  width: 55px;
+  height: 10px;
+  background: blue;
+  position: absolute;
+  top:59%;
+  left:60%;
+}
+
+.water-handle-3 {
+  width: 71px;
+  height: 18px;
+  background: dodgerblue;
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: rotate(90deg);
+}
+
+/*animation*/
+
+/*.water-container div{
+  animation-name: waterchange;
+  animation-duration: 120s;
+  filter: opacity;
+  animation-fill-mode: forwards; 
+}
+
+@keyframes waterchange {
+  0% {filter:opacity(100%);}
+  50% {filter:opacity(50%);}
+  100% {filter:opacity(25%);}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
